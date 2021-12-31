@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Bai Tap 1  -->
+
+
+    <div class="baitap1">
+        <h2>Bài Tập 1 </h2>
+        <h4>Nhập vào điểm chuẩn của hội đồng</h4>
+        <input type="text" id="diemHoiDong" maxlength="2"> <br>
+        <div class="optionMain " style="display: flex;">
+            <div class="optionMainLeft">
+                <h4>Điểm 3 môn thi của thí sinh</h4>
+                <p>Môn thi 1</p> <input type="text" id="mon1">
+                <p>Môn thi 2</p> <input type="text" id="mon2">
+                <p>Môn thi 3</p> <input type="text" id="mon3"> <br> <br>
+            </div>
+            <div class="optionMainRight" style="margin-left: 50px;">
+                <h4>Chọn khu vực</h4>
+                <select id="doiTuong" name="option">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Khu vực 1</option>
+                    <option value="2">Khu vực 2</option>
+                    <option value="3">Khu vực 3</option>
+                    <option value="4">Khu vực không ưu tiên</option>
+                </select>
+                <h4>Chọn nhóm đối tượng</h4>
+                <select id="khuVuc" name="option">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="dt1">Đối tượng 1</option>
+                    <option value="dt2">Đối tượng 2</option>
+                    <option value="dt3">Đối tượng 3</option>
+                    <option value="dt4">Đối tượng không ưu tiên</option>
+                </select>
+            </div>
+        </div>
+        <button onclick="ketQua()">Kết quả</button>
+        <p id="thongBao1" style="color: brown; font-size: 24px;"></p>
+    </div>
+
+
+    <!-- Bai Tap 2  -->
+
+    <div class="baitap2">
+        <h2>Bài Tập 2</h2>
+        <h4>Vui lòng nhập tên</h4>
+        <input type="text" id="nhapTen">
+        <h4>Vui lòng nhập số Kw bạn đã dùng</h4>
+        <input type="text" id="nhapDien"> <br><br>
+        <button onclick="tinhTien()">Tính Tiền</button>
+        <p id="thongBao2" style="color: brown; font-size: 24px;"></p>
+    </div>
+
+
+    <!-- Bai Tap 3  -->
+
+    <div class="baitap3">
+        <h2>Bài Tập 3</h2>
+        <h4>Vui lòng nhập Họ và Tên</h4>
+        <input type="text" id="hoTen">
+        <h4>Vui lòng nhập tổng thu nhập trong năm (Triệu)</h4>
+        <input type="text" id="thuNhap">
+        <h4>Vui lòng nhập số người phụ thuộc</h4>
+        <input type="text" id="nguoiPhuThuoc"> <br><br>
+        <button onclick="tongTien()">Tính Thuế</button>
+        <p id="thongBao3" style="color: brown; font-size: 24px;"></p>
+
+    </div>
+
+    <!-- Bai Tap 4 -->
+
+    <div class="baitap4">
+        <h2>Bài Tập 4</h2>
+        <h4>Vui lòng nhập mã khách hàng</h4>
+        <input type="text" id="maKhach">
+        <h4> Vui lòng chọn loại tiêu dùng</h4>
+        <select id="phanLoai" name="option">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="nhaDan">Hộ Gia Đình</option>
+            <option value="doanhNgiep">Doanh Nghiệp</option>
+        </select>
+        
+        <div class="congKetNoi" id="congKetNoi1" >
+            <h4>Số cổng kết nối</h4>
+            <input type="text" id="ketNoi">
+        </div>
+        <h4>Số kênh cao cấp</h4>
+        <input type="text" id="caoCap"> <br><br>
+        <button onclick="tienCuoc123()">Tổng Tiền</button>
+        <p id="thongBao4" style="color: brown; font-size: 24px;"></p>
+    </div>
+
+    <script src="./baitap1.js"></script>
+    <script src="./baitap2.js"></script>
+    <script src="./baitap3.js"></script>
+    <script src="./baitap4.js"></script>
+
+</body>
+
+</html>
